@@ -1,6 +1,86 @@
 @charset "utf-8"
-$BGcolorBody: rgb(42, 101, 201); 
+$BGcolorBody: rgb(42, 101, 201);
+$mainWidth: 100%;
+$coh: 500px; //contentOneHeight
+$coc: rgb(255, 255, 255); //contentOneColor
+$borderColor: white;
+$footerHeight: 150px;
 
+
+*
+  box-sizing: border-box;
+
+html
+  max-width: 100%
+  overflow-x: hidden;
 
 body
-  background-color: rgb(73, 108, 235);
+  background-color: $BGcolorBody!important;
+
+.header
+  height: 30px;
+  width: $mainWidth;
+  border: 1px solid $borderColor;
+
+.navbar
+  padding-bottom: 0px!important;
+  padding-top: 0px!important;
+
+.navbar-toggler
+  background-color: rgb(255, 255, 255)!important;
+
+.nav-link:hover
+  border-bottom: 3px solid rgb(255, 255, 255);
+
+
+.menu
+  height: 50px;
+  width: $mainWidth;
+  border: 1px solid $borderColor;
+
+.mainImg
+  width: $mainWidth;
+  height: 400px;
+  background-image: url('/img/mainImg.jpg');
+  background-size: cover;
+  background-position: center;
+
+.textContainer
+  text-align: center;
+  border: 1px solid rgb(255, 0, 0);
+  // float: left;
+  top: 50px;
+  width: 100%;
+  background-color: $coc;
+
+.text
+  position: relative;
+  top: -100px;
+  background-color: rgb(65, 90, 222);
+  z-index: 9999;
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid $borderColor;
+  width: 200px;
+  height: 200px;
+
+.contentOne
+  position: relative;
+  z-index: 1;
+  // height: $coh;
+  border: 1px solid $borderColor;
+  background-color: $coc;
+  .content-emty
+    height: 100px;
+
+.serviceBlock
+  background-color: rgb(204, 204, 204);
+
+.aboutBlock
+  background-color: rgb(255, 255, 255);
+
+.footer
+  position: relative;
+  float: left;
+  height: $footerHeight;
+  border: 1px solid $borderColor;

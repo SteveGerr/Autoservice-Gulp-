@@ -1,2 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
-  background-color: #496ceb; }
+  background-color: #2a65c9 !important; }
+
+.header {
+  height: 30px;
+  width: 100%;
+  border: 1px solid white; }
+
+.navbar {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
+
+.navbar-toggler {
+  background-color: white !important; }
+
+.nav-link:hover {
+  border-bottom: 3px solid white; }
+
+.menu {
+  height: 50px;
+  width: 100%;
+  border: 1px solid white; }
+
+.mainImg {
+  width: 100%;
+  height: 400px;
+  background-image: url("/img/mainImg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+
+.textContainer {
+  text-align: center;
+  border: 1px solid red;
+  top: 50px;
+  width: 100%;
+  background-color: white; }
+
+.text {
+  position: relative;
+  top: -100px;
+  background-color: #415ade;
+  z-index: 9999;
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid white;
+  width: 200px;
+  height: 200px; }
+
+.contentOne {
+  position: relative;
+  z-index: 1;
+  border: 1px solid white;
+  background-color: white; }
+  .contentOne .content-emty {
+    height: 100px; }
+
+.serviceBlock {
+  background-color: #cccccc; }
+
+.aboutBlock {
+  background-color: white; }
+
+.footer {
+  position: relative;
+  float: left;
+  height: 150px;
+  border: 1px solid white; }
