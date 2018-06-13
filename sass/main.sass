@@ -1,11 +1,11 @@
 @charset "utf-8"
-$BGcolorBody: rgb(42, 101, 201);
+$BGcolorBody: rgb(255, 255, 255);
 $mainWidth: 100%;
 $coh: 500px; //contentOneHeight
 $coc: rgb(255, 255, 255); //contentOneColor
-$borderColor: white;
+$borderColor: rgb(71, 179, 81)white;
 $footerHeight: 150px;
-
+$bgcolorElem: rgb(62, 107, 184);
 
 *
   box-sizing: border-box;
@@ -15,6 +15,7 @@ html
   overflow-x: hidden;
 
 body
+
   background-color: $BGcolorBody!important;
 
 
@@ -24,6 +25,7 @@ body
   height: 50px;
   width: $mainWidth;
   border-bottom: 1px solid $borderColor;
+  background-color: rgb(49, 35, 119);
   .btn
     margin-top: 5px;
     margin-bottom: 5px;
@@ -34,12 +36,15 @@ body
     padding-bottom: 13px;
     float: right;
   @media screen and (max-width: 500px)
-
       display: none!important;
-    
+
 .navbar
+  width: 100%!important;
   padding-bottom: 0px!important;
   padding-top: 0px!important;
+  background-color: $bgcolorElem;
+  a
+    color: rgb(255, 255, 255)!important;
 
 .navbar-toggler
   background-color: rgb(255, 255, 255)!important;
@@ -48,17 +53,18 @@ body
   border-bottom: 3px solid rgb(255, 255, 255);
 
 
-.menu
-  height: 50px;
-  width: $mainWidth;
-  border: 1px solid $borderColor;
+// .menu
+//
+//   height: 50px;
+//   width: $mainWidth;
+//   background-color: $bgcolorElem;
+//   border: 1px solid $borderColor;
 
 .mainImg
   width: $mainWidth;
   height: 600px;
   background-image: url('/img/mainImg.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: cover;  
   background-attachment: fixed;
 
 .textContainer
