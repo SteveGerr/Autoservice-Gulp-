@@ -20,10 +20,10 @@ body {
   .header .header_phone,
   .header .header_time-job {
     display: inline;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    float: right; }
-  @media screen and (max-width: 500px) {
+    padding: 13px 15px 13px 15px;
+    float: right;
+    color: white; }
+  @media screen and (max-width: 558px) {
     .header {
       display: none !important; } }
 
@@ -35,8 +35,8 @@ body {
   .navbar a {
     color: white !important; }
 
-.navbar-toggler {
-  background-color: white !important; }
+.img-but-menu {
+  width: 25px; }
 
 .nav-link:hover {
   border-bottom: 3px solid white; }
@@ -50,21 +50,21 @@ body {
   background-attachment: fixed; }
 
 .textContainer {
-  text-align: center;
   top: 50px;
   width: 100%;
   background-color: white; }
 
-.text {
+.stiker-text {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
   position: relative;
+  margin: 15px;
   top: -100px;
   background-color: #415ade;
   z-index: 9999;
-  display: inline-block;
-  margin: 15px;
   border: 1px solid #47b351 white;
-  width: 200px;
-  height: 200px; }
+  text-align: center; }
 
 .contentOne {
   position: relative;

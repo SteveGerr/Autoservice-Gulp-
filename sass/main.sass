@@ -21,7 +21,6 @@ body
 
 
 .header
-
   height: 50px;
   width: $mainWidth;
   border-bottom: 1px solid $borderColor;
@@ -32,10 +31,10 @@ body
   .header_phone,
   .header_time-job
     display: inline;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding: 13px 15px 13px 15px;
     float: right;
-  @media screen and (max-width: 500px)
+    color: white;
+  @media screen and (max-width: 558px)
       display: none!important;
 
 .navbar
@@ -47,44 +46,39 @@ body
     color: rgb(255, 255, 255)!important;
 
 .navbar-toggler
-  background-color: rgb(255, 255, 255)!important;
+
+
+.img-but-menu
+  width: 25px;
 
 .nav-link:hover
   border-bottom: 3px solid rgb(255, 255, 255);
-
-
-// .menu
-//
-//   height: 50px;
-//   width: $mainWidth;
-//   background-color: $bgcolorElem;
-//   border: 1px solid $borderColor;
 
 .mainImg
   width: $mainWidth;
   height: 600px;
   background-image: url('/img/mainImg.jpg');
-  background-size: cover;  
+  background-size: cover;
   background-attachment: fixed;
 
 .textContainer
-  text-align: center;
   // border: 1px solid rgb(255, 0, 0);
-  // float: left;
   top: 50px;
   width: 100%;
   background-color: $coc;
 
-.text
+.stiker-text
+  width: 200px;
+  height: 200px;
+  display: inline-block;
   position: relative;
+  margin: 15px;
   top: -100px;
   background-color: rgb(65, 90, 222);
   z-index: 9999;
-  display: inline-block;
-  margin: 15px;
   border: 1px solid $borderColor;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+
 
 .contentOne
   position: relative;
