@@ -54,7 +54,7 @@ body {
   width: 100%;
   background-color: white; }
 
-.stiker-text {
+.stiker-block {
   width: 200px;
   height: 200px;
   display: inline-block;
@@ -65,9 +65,9 @@ body {
   z-index: 9999;
   border: 1px solid #47b351 white;
   text-align: center; }
-  .stiker-text .striker-text-img {
+  .stiker-block .striker-text-img {
     width: 50px; }
-  .stiker-text p {
+  .stiker-block p {
     padding-top: 45px;
     color: white;
     font-size: 25px; }
