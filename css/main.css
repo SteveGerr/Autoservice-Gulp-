@@ -7,6 +7,7 @@ html {
   overflow-x: hidden; }
 
 body {
+  min-width: 300px;
   background-color: white !important; }
 
 .header {
@@ -48,6 +49,10 @@ body {
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed; }
+  @media screen and (max-width: 620px) {
+    .mainImg {
+      background-position: center;
+      background-repeat: no-repeat; } }
 
 .textContainer {
   top: 50px;
@@ -61,16 +66,61 @@ body {
   position: relative;
   margin: 15px;
   top: -100px;
-  background-color: #415ade;
   z-index: 9999;
   border: 1px solid #47b351 white;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
   .stiker-block .striker-text-img {
     width: 50px; }
   .stiker-block p {
     padding-top: 45px;
     color: white;
     font-size: 25px; }
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.front {
+  background-color: #415ade; }
+
+.back {
+  background-color: #415ade;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg); }
+
+.stiker-block:hover .front {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg); }
+
+.stiker-block:hover .back {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg); }
 
 .contentOne {
   position: relative;
