@@ -129,8 +129,29 @@ body {
   background-color: white; }
   .contentOne .content-emty {
     height: 100px; }
+  .contentOne .contentOne-imgBlock {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .contentOne .contentOne-imgWoman {
+    width: 70%; }
+  .contentOne .contentOne-textBlock {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .contentOne p {
+    text-indent: 30px;
+    text-align: justify; }
 
 .serviceBlock {
+  color: white;
+  height: auto;
+  background-image: url("/img/Shinomon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
   background-color: #cccccc; }
 
 .aboutBlock {
