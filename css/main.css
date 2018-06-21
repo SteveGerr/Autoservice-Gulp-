@@ -152,7 +152,12 @@ body {
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  text-align: center; }
+  .serviceBlock li {
+    list-style: none; }
+  .serviceBlock ul {
+    text-align: justify; }
 
 .aboutBlock {
   background-color: white; }
