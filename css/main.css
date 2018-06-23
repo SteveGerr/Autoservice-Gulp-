@@ -144,7 +144,7 @@ body {
     text-align: justify; }
 
 .serviceBlock {
-  color: white;
+  padding: 50px 0px;
   height: auto;
   background-image: url("/img/Shinomon.jpg");
   background-position: center;
@@ -153,11 +153,15 @@ body {
           background-size: cover;
   background-attachment: fixed;
   background-color: #cccccc;
-  text-align: center; }
-  .serviceBlock li {
-    list-style: none; }
+  text-align: center;
+  color: white; }
   .serviceBlock ul {
     text-align: justify; }
+  .serviceBlock li {
+    list-style: none; }
+  .serviceBlock li::before {
+    content: url("/img/hammer16px.png");
+    margin-right: 10px; }
 
 .aboutBlock {
   background-color: white; }
