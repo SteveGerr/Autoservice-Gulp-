@@ -10,6 +10,9 @@ body {
   min-width: 300px;
   background-color: white !important; }
 
+h1 {
+  color: #3e6bb8 !important; }
+
 .header {
   height: 50px;
   width: 100%;
@@ -174,10 +177,31 @@ body {
     margin-right: 10px; }
 
 .aboutBlock {
-  background-color: white; }
+  padding: 50px 0px;
+  position: relative;
+  background-color: white;
+  background-image: url("/img/team.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .aboutBlock p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0px 100px; }
+  .aboutBlock h1 {
+    text-align: center; }
+  .aboutBlock img {
+    width: 50%;
+    position: relative; }
+  .aboutBlock .aboutBlock-img {
+    text-align: center; }
+
+@media screen and (max-width: 992px) {
+  .aboutBlock p {
+    padding: 0px; } }
 
 .footer {
   position: relative;
   float: left;
   height: 150px;
-  border: 1px solid #47b351 white; }
+  border: 1px solid #47b351 white;
+  background-color: #3e6bb8; }

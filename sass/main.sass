@@ -6,7 +6,8 @@ $coc: rgb(255, 255, 255); //contentOneColor
 $borderColor: rgb(71, 179, 81)white;
 $footerHeight: 150px;
 $bgcolorElem: rgb(62, 107, 184);
-
+$h1color: rgb(62, 107, 184);
+$bgfooter: rgb(62, 107, 184);
 *
   box-sizing: border-box;
 
@@ -18,6 +19,8 @@ body
   min-width: 300px;
   background-color: $BGcolorBody!important;
 
+h1
+  color: $h1color!important;
 
 
 .header
@@ -173,10 +176,33 @@ body
     margin-right: 10px;
 
 .aboutBlock
+  padding: 50px 0px;
+  position: relative;
   background-color: rgb(255, 255, 255);
+  background-image: url("/img/team.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  p
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0px 100px;
+  h1
+    text-align: center;
+  img
+    width: 50%;
+    position: relative;
+
+  .aboutBlock-img
+    text-align: center;
+@media screen and (max-width:992px)
+  .aboutBlock p
+    padding: 0px;
+
+
 
 .footer
   position: relative;
   float: left;
   height: $footerHeight;
   border: 1px solid $borderColor;
+  background-color: $bgfooter;
